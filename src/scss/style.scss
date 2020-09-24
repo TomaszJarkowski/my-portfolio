@@ -1,9 +1,14 @@
 @import "_reset.scss";
-
-body {
-    background-color: #F7F7F7;
-}
-
-h1 {
-    color: red;
-}
+@import "_variables.scss";
+@import "_header.scss";
+@import "./section/_about.scss";
+@import "./section/_skills.scss";
+@import "./section/_portfolio.scss";
+@import "./section/_contact.scss";
+@import "_footer.scss";
+@import "./components/_menu.scss";
+@import "./components/_spinner.scss";
+@import "./components/_error.scss";
+@import "./components/_success.scss";
+@import "./components/_backTop.scss";
+@import "_base.scss";

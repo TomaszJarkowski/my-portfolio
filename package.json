@@ -11,7 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "aos": "^3.0.0-beta.6",
+    "font-awesome": "^4.7.0",
+    "jump.js": "^1.0.2",
+    "parcel-bundler": "^1.12.4",
+    "three": "^0.119.1",
+    "vanta": "^0.5.18"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",

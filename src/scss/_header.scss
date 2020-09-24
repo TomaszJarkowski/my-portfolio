@@ -1,0 +1,137 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid $color-lightRed;
+        background-color: rgba(255, 255, 255, 0.288);
+        padding: 30px 10px;
+        border-radius: 10px;
+    }
+
+
+    .title__h1 {
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+        margin: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 2px;
+        text-shadow: 0 0 6px white;
+
+        @media(min-width: 380px) {
+            font-size: 30px;
+        }
+
+        @media(min-width: 480px) {
+            font-size: 35px;
+            padding: 5px;
+        }
+
+        @media(min-width: 650px) {
+            font-size: 45px;
+            letter-spacing: 2px;
+            padding: 7px;
+        }
+
+        @media(min-width: 850px) {
+            font-size: 70px;
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+    }
+
+    .title__h2 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px;
+        color: white;
+        text-shadow: 0 0 2px white;
+
+        @media(min-width: 380px) {
+            font-size: 24px;
+        }
+
+        @media(min-width: 480px) {
+            font-size: 28px;
+        }
+
+        @media(min-width: 650px) {
+            font-size: 32px;
+        }
+
+        @media(min-width: 850px) {
+            font-size: 40px;
+        }
+    }
+
+    .title__img {
+        width: 200px;
+        box-shadow: 10px -5px 5px 0px $color-lightRed;
+        border-radius: 20px;
+
+        @media(min-width: 380px) {
+            width: 250px;
+        }
+
+        @media(min-width: 480px) {
+            width: 300px;
+        }
+
+        @media(min-width: 650px) {
+            width: 320px;
+        }
+    }
+
+    &__arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        i {
+            color: white;
+            font-size: 42px;
+            text-shadow: 0 0 2px white;
+            -moz-animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
+
+            @media(min-width: 480px) {
+                font-size: 50px;
+            }
+        }
+    }
+
+
+
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}

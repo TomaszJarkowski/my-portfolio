@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-bg;
+    font-family: $base-fontFamily;
+    overflow-x: hidden;
+    color: $font-color;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: $max-widthSmall;
+    margin: 0 auto;
+    padding: $base-padding 0;
+}
+
+.description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    padding: 10px;
+
+    @media(min-width: 400px) {
+        font-size: 16px
+    }
+
+    @media(min-width: 600px) {
+        font-size: 18px
+    }
+
+    @media(min-width: 800px) {
+        font-size: 20px;
+        padding: 0 10px $base-padding 10px;
+    }
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 26px;
+    padding: $base-padding 0;
+
+    @media(min-width: 400px) {
+        font-size: 28px
+    }
+
+    @media(min-width: 600px) {
+        font-size: 32px
+    }
+
+    @media(min-width: 800px) {
+        font-size: 40px
+    }
+}
+
+
+::selection {
+    background-color: $color-lightRed;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background-color: $color-lightRed;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-lightRed;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $color-lightGreen;
+}

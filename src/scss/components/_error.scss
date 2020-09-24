@@ -1,0 +1,28 @@
+.form__error {
+    background-color: rgb(211, 16, 39);
+    display: none;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    padding: 10px;
+    color: $font-color;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: linear .2s all;
+
+    @media(min-width: 400px) {
+        font-size: 18px;
+    }
+
+    @media(min-width: 450px) {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    @media(min-width: 550px) {
+        font-size: 22px;
+        padding: $base-padding;
+    }
+}
