@@ -11,15 +11,22 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 2px solid $color-lightRed;
+        width: 100%;
+        max-width: 900px;
+        border-top: 2px solid $color-lightRed;
+        border-bottom: 2px solid $color-lightRed;
         background-color: rgba(255, 255, 255, 0.288);
         padding: 30px 10px;
-        border-radius: 10px;
+
+        @media(min-width: 900px) {
+            border: 2px solid $color-lightRed;
+            border-radius: 10px;
+        }
     }
 
 
     .title__h1 {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 700;
         color: white;
         margin: 10px;
@@ -27,6 +34,10 @@
         text-transform: uppercase;
         padding: 2px;
         text-shadow: 0 0 6px white;
+
+        @media(min-width: 360px) {
+            font-size: 29px;
+        }
 
         @media(min-width: 380px) {
             font-size: 30px;
@@ -75,20 +86,24 @@
     }
 
     .title__img {
-        width: 200px;
+        width: 250px;
         box-shadow: 10px -5px 5px 0px $color-lightRed;
         border-radius: 20px;
 
-        @media(min-width: 380px) {
-            width: 250px;
+        @media(min-width: 350px) {
+            width: 280px;
         }
 
-        @media(min-width: 480px) {
+        @media(min-width: 370px) {
             width: 300px;
         }
 
         @media(min-width: 650px) {
-            width: 320px;
+            width: 340px;
+        }
+
+        @media(min-width: 850px) {
+            width: 380px;
         }
     }
 
