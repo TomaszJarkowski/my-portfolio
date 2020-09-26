@@ -9,6 +9,10 @@ body {
     color: $font-color;
 }
 
+.content {
+    display: none;
+}
+
 html {
     overflow-x: hidden;
 }
