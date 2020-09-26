@@ -36535,7 +36535,26 @@ var animationScroll = function animationScroll() {
 };
 
 exports.animationScroll = animationScroll;
-},{"jump.js":"node_modules/jump.js/dist/jump.module.js"}],"src/js/index.js":[function(require,module,exports) {
+},{"jump.js":"node_modules/jump.js/dist/jump.module.js"}],"src/js/spinner.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.spinner = void 0;
+
+var spinner = function spinner() {
+  var content = document.querySelector(".content");
+  var spinner = document.querySelector(".loading__spinner");
+  window.addEventListener("load", function () {
+    console.log("ok");
+    spinner.style.display = "none";
+    content.style.display = "block";
+  });
+};
+
+exports.spinner = spinner;
+},{}],"src/js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/style.scss");
@@ -36558,13 +36577,15 @@ var _contact = require("./contact");
 
 var _animationScroll = require("./animationScroll");
 
+var _spinner = require("./spinner");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var headerBG = document.querySelector(".header");
+(0, _spinner.spinner)();
 (0, _menu.menu)();
 (0, _skills.skills)();
 (0, _portfolio.portfolio)();
@@ -36606,24 +36627,27 @@ _aos.default.init({
 
 });
 
-(0, _vantaWaves.default)({
-  el: headerBG,
-  THREE: THREE,
-  // use a custom THREE when initializing
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.0,
-  minWidth: 200.0,
-  scale: 1.0,
-  scaleMobile: 1.0,
-  color: 0x6634,
-  shininess: 6.0,
-  waveHeight: 21.0,
-  waveSpeed: 0.45,
-  zoom: 0.8
+window.addEventListener("load", function () {
+  var headerBG = document.querySelector(".header");
+  (0, _vantaWaves.default)({
+    el: headerBG,
+    THREE: THREE,
+    // use a custom THREE when initializing
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0x6634,
+    shininess: 6.0,
+    waveHeight: 21.0,
+    waveSpeed: 0.45,
+    zoom: 0.8
+  });
 });
-},{"../scss/style.scss":"src/scss/style.scss","three":"node_modules/three/build/three.module.js","aos":"node_modules/aos/dist/aos.js","aos/dist/aos.css":"node_modules/aos/dist/aos.css","vanta/dist/vanta.waves.min":"node_modules/vanta/dist/vanta.waves.min.js","./menu":"src/js/menu.js","./skills":"src/js/skills.js","./portfolio":"src/js/portfolio.js","./contact":"src/js/contact.js","./animationScroll":"src/js/animationScroll.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../scss/style.scss":"src/scss/style.scss","three":"node_modules/three/build/three.module.js","aos":"node_modules/aos/dist/aos.js","aos/dist/aos.css":"node_modules/aos/dist/aos.css","vanta/dist/vanta.waves.min":"node_modules/vanta/dist/vanta.waves.min.js","./menu":"src/js/menu.js","./skills":"src/js/skills.js","./portfolio":"src/js/portfolio.js","./contact":"src/js/contact.js","./animationScroll":"src/js/animationScroll.js","./spinner":"src/js/spinner.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -36651,7 +36675,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63714" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59196" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
