@@ -2,7 +2,7 @@
 
 This is my portfolio page, on it you can find a short description of my person, my skills, projects and information on how to contact me. The website was built using HTML / SCSS as well as pure JS.
 
-![screen_second](./src/img/screen-website.png)
+![screen_one](./src/img/screen-website.PNG)
 
 ## Getting Started
 
