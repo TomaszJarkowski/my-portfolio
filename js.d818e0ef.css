@@ -136,11 +136,23 @@ table {
 
 .header {
   position: relative;
+  background-image: url("/background-header.116a5b1c.jpg");
+  background-position: top;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+.header .bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
+  min-height: 100vh;
+  max-width: 2200px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
 }
 .header__title {
   display: flex;
@@ -151,8 +163,9 @@ table {
   max-width: 900px;
   border-top: 2px solid #DF524A;
   border-bottom: 2px solid #DF524A;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px 10px;
+  box-shadow: 0 0 11px 1px black;
 }
 @media (min-width: 900px) {
   .header__title {
@@ -168,7 +181,7 @@ table {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 2px;
-  text-shadow: 0 0 6px white;
+  text-shadow: 0 0 4px white;
 }
 @media (min-width: 360px) {
   .header .title__h1 {
@@ -261,7 +274,7 @@ table {
 }
 .header__arrow i {
   color: white;
-  font-size: 42px;
+  font-size: 48px;
   text-shadow: 0 0 2px white;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -270,6 +283,11 @@ table {
 @media (min-width: 480px) {
   .header__arrow i {
     font-size: 50px;
+  }
+}
+@media (min-width: 900px) {
+  .header__arrow i {
+    font-size: 55px;
   }
 }
 
