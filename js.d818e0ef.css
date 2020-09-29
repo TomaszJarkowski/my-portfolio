@@ -139,13 +139,13 @@ table {
   background-image: url("/background-header.116a5b1c.jpg");
   background-position: top;
   background-size: cover;
+  background-color: white;
   min-height: 100vh;
   max-width: 2200px;
   margin: 0 auto;
 }
 .header .bg {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   min-height: 100vh;
   max-width: 2200px;
@@ -183,6 +183,12 @@ table {
   padding: 2px;
   text-shadow: 0 0 4px white;
 }
+.header .title__h1 span:first-child {
+  color: #D31027;
+}
+.header .title__h1 span:last-child {
+  color: #32be8f;
+}
 @media (min-width: 360px) {
   .header .title__h1 {
     font-size: 29px;
@@ -193,24 +199,49 @@ table {
     font-size: 30px;
   }
 }
+@media (min-width: 400px) {
+  .header .title__h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 440px) {
+  .header .title__h1 {
+    font-size: 34px;
+  }
+}
 @media (min-width: 480px) {
   .header .title__h1 {
     font-size: 35px;
     padding: 5px;
   }
 }
-@media (min-width: 650px) {
+@media (min-width: 550px) {
+  .header .title__h1 {
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+@media (min-width: 600px) {
   .header .title__h1 {
     font-size: 45px;
     letter-spacing: 2px;
-    padding: 7px;
+  }
+}
+@media (min-width: 750px) {
+  .header .title__h1 {
+    font-size: 50px;
   }
 }
 @media (min-width: 850px) {
   .header .title__h1 {
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 3px;
     padding: 10px;
+  }
+}
+@media (min-width: 950px) {
+  .header .title__h1 {
+    font-size: 70px;
   }
 }
 .header .title__h2 {
@@ -219,6 +250,11 @@ table {
   margin: 10px;
   color: white;
   text-shadow: 0 0 2px white;
+}
+@media (min-width: 360px) {
+  .header .title__h2 {
+    font-size: 22px;
+  }
 }
 @media (min-width: 380px) {
   .header .title__h2 {
@@ -255,14 +291,39 @@ table {
     width: 300px;
   }
 }
-@media (min-width: 650px) {
+@media (min-width: 400px) {
+  .header .title__img {
+    width: 310px;
+  }
+}
+@media (min-width: 430px) {
+  .header .title__img {
+    width: 320px;
+  }
+}
+@media (min-width: 480px) {
+  .header .title__img {
+    width: 330px;
+  }
+}
+@media (min-width: 530px) {
   .header .title__img {
     width: 340px;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 600px) {
+  .header .title__img {
+    width: 360px;
+  }
+}
+@media (min-width: 650px) {
   .header .title__img {
     width: 380px;
+  }
+}
+@media (min-width: 900px) {
+  .header .title__img {
+    width: 400px;
   }
 }
 .header__arrow {

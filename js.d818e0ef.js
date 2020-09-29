@@ -436,14 +436,14 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/bootstrap.png":"src/img/skills/bootstrap.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png"}],"src/img/portfolio/world-currencies.PNG":[function(require,module,exports) {
-module.exports = "/world-currencies.726982e2.PNG";
-},{}],"src/img/portfolio/tic-tac-toe.PNG":[function(require,module,exports) {
-module.exports = "/tic-tac-toe.129464b6.PNG";
-},{}],"src/img/portfolio/ecomerse-shop.PNG":[function(require,module,exports) {
-module.exports = "/ecomerse-shop.bb5abeec.PNG";
-},{}],"src/img/portfolio/incomes.PNG":[function(require,module,exports) {
-module.exports = "/incomes.dbea9ed3.PNG";
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/bootstrap.png":"src/img/skills/bootstrap.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
+module.exports = "/world-currencies.26c4b0e0.jpg";
+},{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
+module.exports = "/tic-tac-toe.b18abfbc.jpg";
+},{}],"src/img/portfolio/ecomerse-shop.png":[function(require,module,exports) {
+module.exports = "/ecomerse-shop.4934ef34.png";
+},{}],"src/img/portfolio/income.jpg":[function(require,module,exports) {
+module.exports = "/income.beef484e.jpg";
 },{}],"src/js/portfolio.js":[function(require,module,exports) {
 "use strict";
 
@@ -452,13 +452,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.portfolio = void 0;
 
-var _worldCurrencies = _interopRequireDefault(require("../img/portfolio/world-currencies.PNG"));
+var _worldCurrencies = _interopRequireDefault(require("../img/portfolio/world-currencies.jpg"));
 
-var _ticTacToe = _interopRequireDefault(require("../img/portfolio/tic-tac-toe.PNG"));
+var _ticTacToe = _interopRequireDefault(require("../img/portfolio/tic-tac-toe.jpg"));
 
-var _ecomerseShop = _interopRequireDefault(require("../img/portfolio/ecomerse-shop.PNG"));
+var _ecomerseShop = _interopRequireDefault(require("../img/portfolio/ecomerse-shop.png"));
 
-var _incomes = _interopRequireDefault(require("../img/portfolio/incomes.PNG"));
+var _income = _interopRequireDefault(require("../img/portfolio/income.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -489,7 +489,7 @@ var portfolioDB = [{
   technologys: "SCSS, HTML, JavaScript, RWD, Parcel",
   gh: "https://github.com/TomaszJarkowski/Incomes-Companies",
   link: "https://tomaszjarkowski.github.io/Incomes-Companies",
-  img: _incomes.default
+  img: _income.default
 }];
 
 var portfolio = function portfolio() {
@@ -540,7 +540,7 @@ var portfolio = function portfolio() {
 };
 
 exports.portfolio = portfolio;
-},{"../img/portfolio/world-currencies.PNG":"src/img/portfolio/world-currencies.PNG","../img/portfolio/tic-tac-toe.PNG":"src/img/portfolio/tic-tac-toe.PNG","../img/portfolio/ecomerse-shop.PNG":"src/img/portfolio/ecomerse-shop.PNG","../img/portfolio/incomes.PNG":"src/img/portfolio/incomes.PNG"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
+},{"../img/portfolio/world-currencies.jpg":"src/img/portfolio/world-currencies.jpg","../img/portfolio/tic-tac-toe.jpg":"src/img/portfolio/tic-tac-toe.jpg","../img/portfolio/ecomerse-shop.png":"src/img/portfolio/ecomerse-shop.png","../img/portfolio/income.jpg":"src/img/portfolio/income.jpg"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
@@ -1095,7 +1095,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59518" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61468" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
