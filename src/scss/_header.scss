@@ -3,13 +3,18 @@
     background-image: url("../img/background-header.jpg");
     background-position: top;
     background-size: cover;
+
+
+    background-color: white;
+
     min-height: 100vh;
     max-width: $max-widthBGImg;
     margin: 0 auto;
 
     .bg {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
+        // background-color: rgba(0, 0, 0, 0.2);
+        // background-color: rgba(255, 255, 255, 0.2);
         display: flex;
         min-height: 100vh;
         max-width: $max-widthBGImg;
@@ -51,6 +56,14 @@
         padding: 2px;
         text-shadow: 0 0 4px white;
 
+        span:first-child {
+            color: $color-secondary;
+        }
+
+        span:last-child {
+            color: $color-primary;
+        }
+
         @media(min-width: 360px) {
             font-size: 29px;
         }
@@ -59,21 +72,41 @@
             font-size: 30px;
         }
 
+        @media(min-width: 400px) {
+            font-size: 32px;
+        }
+
+        @media(min-width: 440px) {
+            font-size: 34px;
+        }
+
         @media(min-width: 480px) {
             font-size: 35px;
             padding: 5px;
         }
 
-        @media(min-width: 650px) {
+        @media(min-width: 550px) {
+            font-size: 40px;
+            padding: 10px;
+        }
+
+        @media(min-width: 600px) {
             font-size: 45px;
             letter-spacing: 2px;
-            padding: 7px;
+        }
+
+        @media(min-width: 750px) {
+            font-size: 50px;
         }
 
         @media(min-width: 850px) {
-            font-size: 70px;
+            font-size: 60px;
             letter-spacing: 3px;
             padding: 10px;
+        }
+
+        @media(min-width: 950px) {
+            font-size: 70px;
         }
     }
 
@@ -83,6 +116,10 @@
         margin: 10px;
         color: white;
         text-shadow: 0 0 2px white;
+
+        @media(min-width: 360px) {
+            font-size: 22px;
+        }
 
         @media(min-width: 380px) {
             font-size: 24px;
@@ -99,6 +136,7 @@
         @media(min-width: 850px) {
             font-size: 40px;
         }
+
     }
 
     .title__img {
@@ -114,12 +152,32 @@
             width: 300px;
         }
 
-        @media(min-width: 650px) {
+        @media(min-width: 400px) {
+            width: 310px;
+        }
+
+        @media(min-width: 430px) {
+            width: 320px;
+        }
+
+        @media(min-width: 480px) {
+            width: 330px;
+        }
+
+        @media(min-width: 530px) {
             width: 340px;
         }
 
-        @media(min-width: 850px) {
+        @media(min-width: 600px) {
+            width: 360px;
+        }
+
+        @media(min-width: 650px) {
             width: 380px;
+        }
+
+        @media(min-width: 900px) {
+            width: 400px;
         }
     }
 

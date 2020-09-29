@@ -1,7 +1,7 @@
-import worldCurriencesIMG from "../img/portfolio/world-currencies.PNG";
-import tictactoeIMG from "../img/portfolio/tic-tac-toe.PNG";
-import ecomerseIMG from "../img/portfolio/ecomerse-shop.PNG";
-import incomesIMG from "../img/portfolio/incomes.PNG";
+import worldCurriencesIMG from "../img/portfolio/world-currencies.jpg";
+import tictactoeIMG from "../img/portfolio/tic-tac-toe.jpg";
+import ecomerseIMG from "../img/portfolio/ecomerse-shop.png";
+import incomesIMG from "../img/portfolio/income.jpg";
 const portfolioDB = [
   {
     id: 1,
