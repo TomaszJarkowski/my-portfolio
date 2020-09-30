@@ -183,12 +183,6 @@ table {
   padding: 2px;
   text-shadow: 0 0 4px white;
 }
-.header .title__h1 span:first-child {
-  color: #D31027;
-}
-.header .title__h1 span:last-child {
-  color: #32be8f;
-}
 @media (min-width: 360px) {
   .header .title__h1 {
     font-size: 29px;
