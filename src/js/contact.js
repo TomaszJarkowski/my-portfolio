@@ -28,7 +28,7 @@ export const contact = () => {
     error.style.display = "none";
     success.style.display = "none";
     spinner.style.display = "flex";
-    fetch(`http://localhost:3000/api/post`, {
+    fetch(`https://portfolio-backend-tj.herokuapp.com/api/post`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
