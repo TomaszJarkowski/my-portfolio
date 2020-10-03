@@ -639,7 +639,7 @@ var contact = function contact() {
     error.style.display = "none";
     success.style.display = "none";
     spinner.style.display = "flex";
-    fetch("http://localhost:3000/api/post", {
+    fetch("https://portfolio-backend-tj.herokuapp.com/api/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8"
@@ -1104,7 +1104,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57522" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57762" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
