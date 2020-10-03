@@ -626,6 +626,11 @@ var contact = function contact() {
   var correctEmail = false;
   var correctText = false;
 
+  var hendleError = function hendleError(text) {
+    error.textContent = text;
+    error.style.display = "flex";
+  };
+
   var sendEmail = function sendEmail(text, email) {
     var data = {
       email: email,
@@ -634,20 +639,25 @@ var contact = function contact() {
     error.style.display = "none";
     success.style.display = "none";
     spinner.style.display = "flex";
-    fetch("http://localhost:3000/posts", {
+    fetch("http://localhost:3000/api/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8"
       },
       body: JSON.stringify(data)
     }).then(function (response) {
-      console.log(response);
+      return response.json();
+    }).then(function (response) {
       spinner.style.display = "none";
-      success.style.display = "flex";
+
+      if (response.error) {
+        hendleError(response.error);
+      } else {
+        success.style.display = "flex";
+      }
     }).catch(function (err) {
       spinner.style.display = "none";
       error.style.display = "flex";
-      console.log(err);
     });
   };
 
@@ -729,7 +739,6 @@ var contact = function contact() {
 
   function styleButton() {
     if (correctEmail && correctText) {
-      console.log("walidacja");
       btnForm.classList.remove("disabled");
       btnForm.classList.add("active");
     } else {
@@ -1095,7 +1104,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60201" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57522" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
