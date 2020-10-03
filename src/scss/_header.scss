@@ -56,14 +56,6 @@
         padding: 2px;
         text-shadow: 0 0 4px white;
 
-        span:first-child {
-            color: $color-secondary;
-        }
-
-        span:last-child {
-            color: $color-primary;
-        }
-
         @media(min-width: 360px) {
             font-size: 29px;
         }

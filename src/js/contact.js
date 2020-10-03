@@ -15,6 +15,11 @@ export const contact = () => {
   let correctEmail = false;
   let correctText = false;
 
+  const hendleError = (text) => {
+    error.textContent = text;
+    error.style.display = "flex";
+  };
+
   const sendEmail = (text, email) => {
     const data = {
       email,
@@ -23,22 +28,25 @@ export const contact = () => {
     error.style.display = "none";
     success.style.display = "none";
     spinner.style.display = "flex";
-    fetch(`http://localhost:3000/posts`, {
+    fetch(`http://localhost:3000/api/post`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(data),
     })
+      .then((response) => response.json())
       .then((response) => {
-        console.log(response);
         spinner.style.display = "none";
-        success.style.display = "flex";
+        if (response.error) {
+          hendleError(response.error);
+        } else {
+          success.style.display = "flex";
+        }
       })
       .catch((err) => {
         spinner.style.display = "none";
         error.style.display = "flex";
-        console.log(err);
       });
   };
 
@@ -120,7 +128,6 @@ export const contact = () => {
   }
   function styleButton() {
     if (correctEmail && correctText) {
-      console.log("walidacja");
       btnForm.classList.remove("disabled");
       btnForm.classList.add("active");
     } else {
