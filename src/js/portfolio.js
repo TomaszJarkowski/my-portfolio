@@ -1,15 +1,15 @@
 import worldCurriencesIMG from "../img/portfolio/world-currencies.jpg";
 import tictactoeIMG from "../img/portfolio/tic-tac-toe.jpg";
-import ecomerseIMG from "../img/portfolio/ecomerse-shop.png";
 import incomesIMG from "../img/portfolio/income.jpg";
+import shopGuru from "../img/portfolio/shop-guru.jpg";
 const portfolioDB = [
   {
     id: 1,
-    name: "World-Currencies-App",
-    technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
-    gh: "https://github.com/TomaszJarkowski/world-currencies-app",
-    link: "https://tomaszjarkowski.github.io/world-currencies-app",
-    img: worldCurriencesIMG,
+    name: "Shop-Guru",
+    technologys: "MERN (MongoDB, Express, React, Node.js)",
+    gh: "https://github.com/TomaszJarkowski/shop-guru",
+    link: "https://guru-shop.herokuapp.com/shop",
+    img: shopGuru,
   },
   {
     id: 2,
@@ -21,11 +21,11 @@ const portfolioDB = [
   },
   {
     id: 3,
-    name: "Ecomerse-Shop",
-    technologys: "SCSS, HTML, JavaScript, Local Storage, RWD, Parcel",
-    gh: "https://github.com/TomaszJarkowski/Ecomerse-shop",
-    link: "https://tomaszjarkowski.github.io/Ecomerse-shop",
-    img: ecomerseIMG,
+    name: "World-Currencies-App",
+    technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
+    gh: "https://github.com/TomaszJarkowski/world-currencies-app",
+    link: "https://tomaszjarkowski.github.io/world-currencies-app",
+    img: worldCurriencesIMG,
   },
   {
     id: 4,
