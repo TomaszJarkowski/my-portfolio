@@ -440,10 +440,10 @@ exports.skills = skills;
 module.exports = "/world-currencies.26c4b0e0.jpg";
 },{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
-},{}],"src/img/portfolio/ecomerse-shop.png":[function(require,module,exports) {
-module.exports = "/ecomerse-shop.4934ef34.png";
 },{}],"src/img/portfolio/income.jpg":[function(require,module,exports) {
 module.exports = "/income.beef484e.jpg";
+},{}],"src/img/portfolio/shop-guru.jpg":[function(require,module,exports) {
+module.exports = "/shop-guru.2de1cfcd.jpg";
 },{}],"src/js/portfolio.js":[function(require,module,exports) {
 "use strict";
 
@@ -456,19 +456,19 @@ var _worldCurrencies = _interopRequireDefault(require("../img/portfolio/world-cu
 
 var _ticTacToe = _interopRequireDefault(require("../img/portfolio/tic-tac-toe.jpg"));
 
-var _ecomerseShop = _interopRequireDefault(require("../img/portfolio/ecomerse-shop.png"));
-
 var _income = _interopRequireDefault(require("../img/portfolio/income.jpg"));
+
+var _shopGuru = _interopRequireDefault(require("../img/portfolio/shop-guru.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var portfolioDB = [{
   id: 1,
-  name: "World-Currencies-App",
-  technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
-  gh: "https://github.com/TomaszJarkowski/world-currencies-app",
-  link: "https://tomaszjarkowski.github.io/world-currencies-app",
-  img: _worldCurrencies.default
+  name: "Shop-Guru",
+  technologys: "MERN (MongoDB, Express, React, Node.js)",
+  gh: "https://github.com/TomaszJarkowski/shop-guru",
+  link: "https://guru-shop.herokuapp.com/shop",
+  img: _shopGuru.default
 }, {
   id: 2,
   name: "Tic-Tac-Toe",
@@ -478,11 +478,11 @@ var portfolioDB = [{
   img: _ticTacToe.default
 }, {
   id: 3,
-  name: "Ecomerse-Shop",
-  technologys: "SCSS, HTML, JavaScript, Local Storage, RWD, Parcel",
-  gh: "https://github.com/TomaszJarkowski/Ecomerse-shop",
-  link: "https://tomaszjarkowski.github.io/Ecomerse-shop",
-  img: _ecomerseShop.default
+  name: "World-Currencies-App",
+  technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
+  gh: "https://github.com/TomaszJarkowski/world-currencies-app",
+  link: "https://tomaszjarkowski.github.io/world-currencies-app",
+  img: _worldCurrencies.default
 }, {
   id: 4,
   name: "Incomes-Companies",
@@ -540,7 +540,7 @@ var portfolio = function portfolio() {
 };
 
 exports.portfolio = portfolio;
-},{"../img/portfolio/world-currencies.jpg":"src/img/portfolio/world-currencies.jpg","../img/portfolio/tic-tac-toe.jpg":"src/img/portfolio/tic-tac-toe.jpg","../img/portfolio/ecomerse-shop.png":"src/img/portfolio/ecomerse-shop.png","../img/portfolio/income.jpg":"src/img/portfolio/income.jpg"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
+},{"../img/portfolio/world-currencies.jpg":"src/img/portfolio/world-currencies.jpg","../img/portfolio/tic-tac-toe.jpg":"src/img/portfolio/tic-tac-toe.jpg","../img/portfolio/income.jpg":"src/img/portfolio/income.jpg","../img/portfolio/shop-guru.jpg":"src/img/portfolio/shop-guru.jpg"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
@@ -1104,7 +1104,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57762" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51612" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
