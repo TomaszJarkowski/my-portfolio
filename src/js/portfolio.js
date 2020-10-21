@@ -1,6 +1,7 @@
 import worldCurriencesIMG from "../img/portfolio/world-currencies.jpg";
 import tictactoeIMG from "../img/portfolio/tic-tac-toe.jpg";
 import incomesIMG from "../img/portfolio/income.jpg";
+import bookingIMG from "../img/portfolio/booking-app.jpg";
 import shopGuru from "../img/portfolio/shop-guru.jpg";
 const portfolioDB = [
   {
@@ -29,11 +30,11 @@ const portfolioDB = [
   },
   {
     id: 4,
-    name: "Incomes-Companies",
-    technologys: "SCSS, HTML, JavaScript, RWD, Parcel",
-    gh: "https://github.com/TomaszJarkowski/Incomes-Companies",
-    link: "https://tomaszjarkowski.github.io/Incomes-Companies",
-    img: incomesIMG,
+    name: "Booking-App",
+    technologys: "MERN (MongoDB, Express, React, Node.js)",
+    gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
+    link: "https://booking-app-front.herokuapp.com/",
+    img: bookingIMG,
   },
 ];
 
