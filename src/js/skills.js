@@ -14,6 +14,8 @@ import gitIMG from "../img/skills/git.png";
 import vsIMG from "../img/skills/visual-studio-code.png";
 import parcelIMG from "../img/skills/parcel.png";
 import seoIMG from "../img/skills/seo.png";
+import typescriptIMG from "../img/skills/typescript.png";
+import nextJSIMG from "../img/skills/nextJS.png";
 const dataSkills = [
   {
     id: 1,
@@ -36,32 +38,32 @@ const dataSkills = [
   {
     id: 4,
     type: "front",
-    name: "Bootstrap",
-    img: bootstrapIMG,
-  },
-  {
-    id: 5,
-    type: "front",
     name: "JavaScript",
     img: JSIMG,
   },
   {
+    id: 5,
+    type: "front",
+    name: "TypeScript",
+    img: typescriptIMG,
+  },
+  {
     id: 6,
+    type: "front",
+    name: "Next.js",
+    img: nextJSIMG,
+  },
+  {
+    id: 7,
     type: "front",
     name: "React",
     img: ReactIMG,
   },
   {
-    id: 7,
+    id: 8,
     type: "front",
     name: "Redux",
     img: ReduxIMG,
-  },
-  {
-    id: 8,
-    type: "front",
-    name: "RWD",
-    img: RWDIMG,
   },
   {
     id: 9,
@@ -78,35 +80,41 @@ const dataSkills = [
   {
     id: 11,
     type: "other",
+    name: "RWD",
+    img: RWDIMG,
+  },
+  {
+    id: 12,
+    type: "other",
     name: "NPM",
     img: npmIMG,
   },
   {
-    id: 12,
+    id: 13,
     type: "other",
     name: "Jest",
     img: jestIMG,
   },
   {
-    id: 13,
+    id: 14,
     type: "other",
     name: "GIT",
     img: gitIMG,
   },
   {
-    id: 14,
+    id: 15,
     type: "other",
     name: "Visual Studio Code",
     img: vsIMG,
   },
   {
-    id: 15,
+    id: 16,
     type: "other",
     name: "Parcel",
     img: parcelIMG,
   },
   {
-    id: 16,
+    id: 17,
     type: "other",
     name: "SEO",
     img: seoIMG,
