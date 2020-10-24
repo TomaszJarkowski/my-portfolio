@@ -277,6 +277,10 @@ module.exports = "/visual-studio-code.fc88be70.png";
 module.exports = "/parcel.d226e4df.png";
 },{}],"src/img/skills/seo.png":[function(require,module,exports) {
 module.exports = "/seo.434f49c6.png";
+},{}],"src/img/skills/typescript.png":[function(require,module,exports) {
+module.exports = "/typescript.ff62d379.png";
+},{}],"src/img/skills/nextJS.png":[function(require,module,exports) {
+module.exports = "/nextJS.44bc22a6.png";
 },{}],"src/js/skills.js":[function(require,module,exports) {
 "use strict";
 
@@ -317,6 +321,10 @@ var _parcel = _interopRequireDefault(require("../img/skills/parcel.png"));
 
 var _seo = _interopRequireDefault(require("../img/skills/seo.png"));
 
+var _typescript = _interopRequireDefault(require("../img/skills/typescript.png"));
+
+var _nextJS = _interopRequireDefault(require("../img/skills/nextJS.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var dataSkills = [{
@@ -337,28 +345,28 @@ var dataSkills = [{
 }, {
   id: 4,
   type: "front",
-  name: "Bootstrap",
-  img: _bootstrap.default
-}, {
-  id: 5,
-  type: "front",
   name: "JavaScript",
   img: _javascript.default
 }, {
+  id: 5,
+  type: "front",
+  name: "TypeScript",
+  img: _typescript.default
+}, {
   id: 6,
+  type: "front",
+  name: "Next.js",
+  img: _nextJS.default
+}, {
+  id: 7,
   type: "front",
   name: "React",
   img: _react.default
 }, {
-  id: 7,
+  id: 8,
   type: "front",
   name: "Redux",
   img: _redux.default
-}, {
-  id: 8,
-  type: "front",
-  name: "RWD",
-  img: _rwd.default
 }, {
   id: 9,
   type: "back",
@@ -372,30 +380,35 @@ var dataSkills = [{
 }, {
   id: 11,
   type: "other",
+  name: "RWD",
+  img: _rwd.default
+}, {
+  id: 12,
+  type: "other",
   name: "NPM",
   img: _npm.default
 }, {
-  id: 12,
+  id: 13,
   type: "other",
   name: "Jest",
   img: _jest.default
 }, {
-  id: 13,
+  id: 14,
   type: "other",
   name: "GIT",
   img: _git.default
 }, {
-  id: 14,
+  id: 15,
   type: "other",
   name: "Visual Studio Code",
   img: _visualStudioCode.default
 }, {
-  id: 15,
+  id: 16,
   type: "other",
   name: "Parcel",
   img: _parcel.default
 }, {
-  id: 16,
+  id: 17,
   type: "other",
   name: "SEO",
   img: _seo.default
@@ -436,7 +449,7 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/bootstrap.png":"src/img/skills/bootstrap.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/bootstrap.png":"src/img/skills/bootstrap.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextJS.png":"src/img/skills/nextJS.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
 module.exports = "/world-currencies.26c4b0e0.jpg";
 },{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
@@ -1108,7 +1121,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57091" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52207" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
