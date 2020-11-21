@@ -453,12 +453,14 @@ exports.skills = skills;
 module.exports = "/world-currencies.26c4b0e0.jpg";
 },{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
-},{}],"src/img/portfolio/income.jpg":[function(require,module,exports) {
-module.exports = "/income.beef484e.jpg";
 },{}],"src/img/portfolio/booking-app.jpg":[function(require,module,exports) {
 module.exports = "/booking-app.ac59b76d.jpg";
 },{}],"src/img/portfolio/shop-guru.jpg":[function(require,module,exports) {
 module.exports = "/shop-guru.2de1cfcd.jpg";
+},{}],"src/img/portfolio/book-search.jpg":[function(require,module,exports) {
+module.exports = "/book-search.8dd0839e.jpg";
+},{}],"src/img/portfolio/world-currenciesTS.jpg":[function(require,module,exports) {
+module.exports = "/world-currenciesTS.e14a1433.jpg";
 },{}],"src/js/portfolio.js":[function(require,module,exports) {
 "use strict";
 
@@ -471,11 +473,13 @@ var _worldCurrencies = _interopRequireDefault(require("../img/portfolio/world-cu
 
 var _ticTacToe = _interopRequireDefault(require("../img/portfolio/tic-tac-toe.jpg"));
 
-var _income = _interopRequireDefault(require("../img/portfolio/income.jpg"));
-
 var _bookingApp = _interopRequireDefault(require("../img/portfolio/booking-app.jpg"));
 
 var _shopGuru = _interopRequireDefault(require("../img/portfolio/shop-guru.jpg"));
+
+var _bookSearch = _interopRequireDefault(require("../img/portfolio/book-search.jpg"));
+
+var _worldCurrenciesTS = _interopRequireDefault(require("../img/portfolio/world-currenciesTS.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -495,18 +499,32 @@ var portfolioDB = [{
   img: _ticTacToe.default
 }, {
   id: 3,
+  name: "Booking-App",
+  technologys: "MERN (MongoDB, Express, React, Node.js)",
+  gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
+  link: "https://booking-app-front.herokuapp.com/",
+  img: _bookingApp.default
+}, {
+  id: 4,
   name: "World-Currencies-App",
   technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
   gh: "https://github.com/TomaszJarkowski/world-currencies-app",
   link: "https://tomaszjarkowski.github.io/world-currencies-app",
   img: _worldCurrencies.default
 }, {
-  id: 4,
-  name: "Booking-App",
-  technologys: "MERN (MongoDB, Express, React, Node.js)",
-  gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
-  link: "https://booking-app-front.herokuapp.com/",
-  img: _bookingApp.default
+  id: 5,
+  name: "Search-Book-App",
+  technologys: "React, Context, Jest, SCSS, RWD",
+  gh: "https://github.com/TomaszJarkowski/search-books-app",
+  link: "https://tomaszjarkowski.github.io/search-books-app/",
+  img: _bookSearch.default
+}, {
+  id: 6,
+  name: "Currencies-Converter",
+  technologys: "HTML, TypeScript, SCSS, RWD, Parcel",
+  gh: "https://github.com/TomaszJarkowski/World-Curriencies-TS",
+  link: "https://tomaszjarkowski.github.io/World-Curriencies-TS/",
+  img: _worldCurrenciesTS.default
 }];
 
 var portfolio = function portfolio() {
@@ -557,7 +575,7 @@ var portfolio = function portfolio() {
 };
 
 exports.portfolio = portfolio;
-},{"../img/portfolio/world-currencies.jpg":"src/img/portfolio/world-currencies.jpg","../img/portfolio/tic-tac-toe.jpg":"src/img/portfolio/tic-tac-toe.jpg","../img/portfolio/income.jpg":"src/img/portfolio/income.jpg","../img/portfolio/booking-app.jpg":"src/img/portfolio/booking-app.jpg","../img/portfolio/shop-guru.jpg":"src/img/portfolio/shop-guru.jpg"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
+},{"../img/portfolio/world-currencies.jpg":"src/img/portfolio/world-currencies.jpg","../img/portfolio/tic-tac-toe.jpg":"src/img/portfolio/tic-tac-toe.jpg","../img/portfolio/booking-app.jpg":"src/img/portfolio/booking-app.jpg","../img/portfolio/shop-guru.jpg":"src/img/portfolio/shop-guru.jpg","../img/portfolio/book-search.jpg":"src/img/portfolio/book-search.jpg","../img/portfolio/world-currenciesTS.jpg":"src/img/portfolio/world-currenciesTS.jpg"}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
@@ -1121,7 +1139,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52207" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52074" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
