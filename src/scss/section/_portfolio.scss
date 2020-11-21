@@ -40,6 +40,24 @@
             }
         }
 
+        &:nth-child(5) {
+            border-bottom: 15px solid $color-primary;
+
+            h2 {
+                color: $color-primary !important;
+                text-shadow: 0 0 30px $color-primary !important;
+            }
+
+            button a {
+                border: 2px solid $color-primary !important;
+            }
+
+            button:hover {
+                background-color: $color-primary !important;
+                ;
+            }
+        }
+
         @media(min-width:400px) {
             height: 300px;
         }

@@ -1,8 +1,10 @@
 import worldCurriencesIMG from "../img/portfolio/world-currencies.jpg";
 import tictactoeIMG from "../img/portfolio/tic-tac-toe.jpg";
-import incomesIMG from "../img/portfolio/income.jpg";
 import bookingIMG from "../img/portfolio/booking-app.jpg";
-import shopGuru from "../img/portfolio/shop-guru.jpg";
+import shopGuruIMG from "../img/portfolio/shop-guru.jpg";
+import bookSearchIMG from "../img/portfolio/book-search.jpg";
+import currenciesConverterIMG from "../img/portfolio/world-currenciesTS.jpg";
+
 const portfolioDB = [
   {
     id: 1,
@@ -10,7 +12,7 @@ const portfolioDB = [
     technologys: "MERN (MongoDB, Express, React, Node.js)",
     gh: "https://github.com/TomaszJarkowski/shop-guru",
     link: "https://guru-shop.herokuapp.com/shop",
-    img: shopGuru,
+    img: shopGuruIMG,
   },
   {
     id: 2,
@@ -22,6 +24,14 @@ const portfolioDB = [
   },
   {
     id: 3,
+    name: "Booking-App",
+    technologys: "MERN (MongoDB, Express, React, Node.js)",
+    gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
+    link: "https://booking-app-front.herokuapp.com/",
+    img: bookingIMG,
+  },
+  {
+    id: 4,
     name: "World-Currencies-App",
     technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
     gh: "https://github.com/TomaszJarkowski/world-currencies-app",
@@ -29,12 +39,20 @@ const portfolioDB = [
     img: worldCurriencesIMG,
   },
   {
-    id: 4,
-    name: "Booking-App",
-    technologys: "MERN (MongoDB, Express, React, Node.js)",
-    gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
-    link: "https://booking-app-front.herokuapp.com/",
-    img: bookingIMG,
+    id: 5,
+    name: "Search-Book-App",
+    technologys: "React, Context, Jest, SCSS, RWD",
+    gh: "https://github.com/TomaszJarkowski/search-books-app",
+    link: "https://tomaszjarkowski.github.io/search-books-app/",
+    img: bookSearchIMG,
+  },
+  {
+    id: 6,
+    name: "Currencies-Converter",
+    technologys: "HTML, TypeScript, SCSS, RWD, Parcel",
+    gh: "https://github.com/TomaszJarkowski/World-Curriencies-TS",
+    link: "https://tomaszjarkowski.github.io/World-Curriencies-TS/",
+    img: currenciesConverterIMG,
   },
 ];
 
