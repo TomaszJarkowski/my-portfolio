@@ -90,14 +90,6 @@
         box-shadow: 0 0 4px 1px $color-lightRed;
         width: 80%;
         max-width: 430px;
-
-        // background: $color-secondary;
-        // /* fallback for old browsers */
-        // background: -webkit-linear-gradient(to right, #EA384D, $color-secondary);
-        // /* Chrome 10-25, Safari 5.1-6 */
-        // background: linear-gradient(to right, #EA384D, $color-secondary);
-        // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
         background-color: white;
         padding: $base-padding;
         opacity: 0;
@@ -115,7 +107,7 @@
 
 
         li:nth-child(even) {
-            a:hover {
+            .link:hover {
                 color: white;
                 background-color: $color-secondary;
 
@@ -125,7 +117,7 @@
         }
 
         li:nth-child(odd) {
-            a:hover {
+            .link:hover {
                 color: white;
                 background-color: $color-primary;
 
@@ -146,7 +138,7 @@
                 margin: 10px
             }
 
-            a {
+            .link {
                 cursor: pointer;
                 display: flex;
                 text-decoration: none;

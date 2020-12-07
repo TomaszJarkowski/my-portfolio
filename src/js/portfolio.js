@@ -65,6 +65,7 @@ export const portfolio = () => {
 
     const img = document.createElement("img");
     img.src = el.img;
+    img.alt = el.name;
     img.classList.add("portfolio__img");
 
     const bg = document.createElement("div");
@@ -86,11 +87,11 @@ export const portfolio = () => {
 
     const buttonGH = document.createElement("button");
     buttonGH.classList.add("portfolio__buttonGH");
-    buttonGH.innerHTML = `<a href=${el.gh} target='_blank'>Github <i class='fab fa-github'></i></a>`;
+    buttonGH.innerHTML = `<a href=${el.gh} target='_blank' rel="noopener" rel="noreferrer">Github <i class='fab fa-github'></i></a>`;
 
     const buttonLive = document.createElement("button");
     buttonLive.classList.add("portfolio__buttonLive");
-    buttonLive.innerHTML = `<a href=${el.link} target='_blank'>Demo <i class='fas fa-desktop'></i></a>`;
+    buttonLive.innerHTML = `<a href=${el.link} target='_blank' rel="noopener" rel="noreferrer">Demo <i class='fas fa-desktop'></i></a>`;
 
     buttons.appendChild(buttonGH);
     buttons.appendChild(buttonLive);

@@ -145,7 +145,7 @@ export const skills = () => {
     div.dataset.aos = "fade";
     h4.innerText = skill.name;
     img.src = skill.img;
-
+    img.alt = skill.name;
     div.appendChild(h4);
     div.appendChild(img);
 

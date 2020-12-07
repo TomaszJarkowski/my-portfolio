@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 
 <head>
     <meta charset="utf-8" />
@@ -9,7 +9,7 @@
         content="My name is Tomasz Jarkowski and I am a beginner Junior Front-end Developer, see my portfolio! If you have any questions, you can send me an e-mail in the contact section." />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
+    <meta name="language" content="Polish" />
     <meta name="author" content="Tomasz Jarkowski" />
     <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
@@ -50,16 +50,24 @@
                 </div>
                 <div class="menu">
                     <ul class="menu__links">
-                        <li class="link__aboutMe"><a><i class="fas fa-user-circle"></i>O mnie</a></li>
-                        <li class="link__skills"><a><i class="fas fa-wrench"></i>Umiejętności</a></li>
-                        <li class="link__portfolio"><a><i class="fas fa-briefcase"></i>Projekty</a></li>
-                        <li class="link__contact"><a><i class="fas fa-envelope"></i>Kontakt</a></li>
+                        <li class="link__aboutMe">
+                            <div class="link"><i class="fas fa-user-circle"></i>O mnie</div>
+                        </li>
+                        <li class="link__skills">
+                            <div class="link"><i class="fas fa-wrench"></i>Umiejętności</div>
+                        </li>
+                        <li class="link__portfolio">
+                            <div class="link"><i class="fas fa-briefcase"></i>Projekty</div>
+                        </li>
+                        <li class="link__contact">
+                            <div class="link"><i class="fas fa-envelope"></i>Kontakt</div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="backTop">
-            <button><i class="fas fa-angle-up"></i></button>
+            <button aria-label="back top"><i class="fas fa-angle-up"></i></button>
         </div>
         <section class="aboutMe">
             <div class="aboutMe__bg">
@@ -137,20 +145,20 @@
                             <div class="bounce3"></div>
                         </div>
                         <div class="input__item">
-                            <h5 class="name__email"> <i class="fas fa-user"></i>
-                                Email</h5>
+                            <h4 class="name__email"> <i class="fas fa-user"></i>
+                                Email</h4>
                             <input type="email" id="email" class="input input__email" placeholder="Wprowadź email">
                             <i class="fas fa-lock email__lock lock"></i>
                         </div>
                         <div class="input__item">
-                            <h5><i class="fas fa-keyboard"></i>Wiadomość</h5>
+                            <h4><i class="fas fa-keyboard"></i>Wiadomość</h4>
                             <textarea type="text-area" id="text-area" class="input input__text"
                                 placeholder="Wprowadź treść wiadomości"></textarea>
                             <i class="fas fa-lock text__lock lock"></i>
                         </div>
                         <div class="form__error">Uuuuuups! Coś poszło nie tak! Spróbuj ponownie 😢</div>
                         <div class="form__success">
-                            <img src="./src/img/tick.png">
+                            <img src="./src/img/tick.png" alt="success picture">
                             <p>Udało się wysłać maila! Teraz wszystko w moich rękach 💪</p>
                         </div>
                         <input type="submit" class="btn btn__form" value="Wyślij">
@@ -158,9 +166,10 @@
                     </form>
                     <div class="contact__buttons">
                         <button class="button__cv"><a href="./src/img/CV/CV_Jarkowski_Tomasz.pdf"
-                                download>CV</a><button>
-                                <button><a href="https://github.com/TomaszJarkowski" target="_blank" rel="noopener"
-                                        rel="noreferrer"><i class="fab fa-github"></i></a></button>
+                                download>CV</a></button>
+                        <button aria-label="github link"><a href="https://github.com/TomaszJarkowski" aria-label="link"
+                                target="_blank" rel="noopener" rel="noreferrer"><i
+                                    class="fab fa-github"></i></a></button>
                     </div>
                     <div class="contact__info">
                         <div class="info__items">
