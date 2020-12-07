@@ -438,6 +438,7 @@ var skills = function skills() {
     div.dataset.aos = "fade";
     h4.innerText = skill.name;
     img.src = skill.img;
+    img.alt = skill.name;
     div.appendChild(h4);
     div.appendChild(img);
 
@@ -544,6 +545,7 @@ var portfolio = function portfolio() {
     container.classList.add("portfolio__item");
     var img = document.createElement("img");
     img.src = el.img;
+    img.alt = el.name;
     img.classList.add("portfolio__img");
     var bg = document.createElement("div");
     bg.classList.add("portfolio__bg");
@@ -559,10 +561,10 @@ var portfolio = function portfolio() {
     buttons.classList.add("portfolio__buttons");
     var buttonGH = document.createElement("button");
     buttonGH.classList.add("portfolio__buttonGH");
-    buttonGH.innerHTML = "<a href=".concat(el.gh, " target='_blank'>Github <i class='fab fa-github'></i></a>");
+    buttonGH.innerHTML = "<a href=".concat(el.gh, " target='_blank' rel=\"noopener\" rel=\"noreferrer\">Github <i class='fab fa-github'></i></a>");
     var buttonLive = document.createElement("button");
     buttonLive.classList.add("portfolio__buttonLive");
-    buttonLive.innerHTML = "<a href=".concat(el.link, " target='_blank'>Demo <i class='fas fa-desktop'></i></a>");
+    buttonLive.innerHTML = "<a href=".concat(el.link, " target='_blank' rel=\"noopener\" rel=\"noreferrer\">Demo <i class='fas fa-desktop'></i></a>");
     buttons.appendChild(buttonGH);
     buttons.appendChild(buttonLive);
     header.appendChild(h2);
@@ -1148,7 +1150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50533" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61930" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

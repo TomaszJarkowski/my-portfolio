@@ -864,23 +864,23 @@ table {
     line-height: 40px;
   }
 }
-.contact .input__item h5 {
+.contact .input__item h4 {
   font-size: 20px;
   width: 140px;
   font-weight: bold;
   margin: 0 auto 10px auto;
   color: #242526;
 }
-.contact .input__item h5 i {
+.contact .input__item h4 i {
   margin-right: 7px;
 }
 @media (min-width: 700px) {
-  .contact .input__item h5 {
+  .contact .input__item h4 {
     margin-right: 20px;
   }
 }
 @media (min-width: 550px) {
-  .contact .input__item h5 {
+  .contact .input__item h4 {
     font-size: 22px;
     width: 150px;
   }
@@ -1096,12 +1096,12 @@ footer {
     margin-right: -30px;
   }
 }
-.hamburger__menu .menu li:nth-child(even) a:hover {
+.hamburger__menu .menu li:nth-child(even) .link:hover {
   color: white;
   background-color: #D31027;
   transform: scale(1.05);
 }
-.hamburger__menu .menu li:nth-child(odd) a:hover {
+.hamburger__menu .menu li:nth-child(odd) .link:hover {
   color: white;
   background-color: #32be8f;
   transform: scale(1.05);
@@ -1116,7 +1116,7 @@ footer {
     margin: 10px;
   }
 }
-.hamburger__menu .menu li a {
+.hamburger__menu .menu li .link {
   cursor: pointer;
   display: flex;
   text-decoration: none;
@@ -1127,23 +1127,23 @@ footer {
   letter-spacing: 1px;
   color: #242526;
 }
-.hamburger__menu .menu li a i {
+.hamburger__menu .menu li .link i {
   margin-right: 20px;
 }
 @media (min-width: 360px) {
-  .hamburger__menu .menu li a {
+  .hamburger__menu .menu li .link {
     font-size: 20px;
     padding: 10px 12px;
   }
 }
 @media (min-width: 430px) {
-  .hamburger__menu .menu li a {
+  .hamburger__menu .menu li .link {
     font-size: 24px;
     padding: 10px 15px;
   }
 }
 @media (min-width: 900px) {
-  .hamburger__menu .menu li a {
+  .hamburger__menu .menu li .link {
     font-size: 26px;
     padding: 10px 20px;
   }
