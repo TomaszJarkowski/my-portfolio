@@ -439,6 +439,7 @@ var skills = function skills() {
     h4.innerText = skill.name;
     img.src = skill.img;
     img.alt = skill.name;
+    img.setAttribute("loading", "lazy");
     div.appendChild(h4);
     div.appendChild(img);
 
@@ -547,6 +548,7 @@ var portfolio = function portfolio() {
     img.src = el.img;
     img.alt = el.name;
     img.classList.add("portfolio__img");
+    img.setAttribute("loading", "lazy");
     var bg = document.createElement("div");
     bg.classList.add("portfolio__bg");
     var header = document.createElement("div");
@@ -1150,7 +1152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50789" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
