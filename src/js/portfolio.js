@@ -67,6 +67,7 @@ export const portfolio = () => {
     img.src = el.img;
     img.alt = el.name;
     img.classList.add("portfolio__img");
+    img.setAttribute("loading", "lazy");
 
     const bg = document.createElement("div");
     bg.classList.add("portfolio__bg");

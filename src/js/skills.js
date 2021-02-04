@@ -146,6 +146,7 @@ export const skills = () => {
     h4.innerText = skill.name;
     img.src = skill.img;
     img.alt = skill.name;
+    img.setAttribute("loading", "lazy");
     div.appendChild(h4);
     div.appendChild(img);
 
