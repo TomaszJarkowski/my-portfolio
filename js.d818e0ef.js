@@ -251,8 +251,6 @@ module.exports = "/html5.f8ef990f.png";
 module.exports = "/css3.d2ba5fac.png";
 },{}],"src/img/skills/sass.png":[function(require,module,exports) {
 module.exports = "/sass.2e07d446.png";
-},{}],"src/img/skills/bootstrap.png":[function(require,module,exports) {
-module.exports = "/bootstrap.eba0c1f1.png";
 },{}],"src/img/skills/javascript.png":[function(require,module,exports) {
 module.exports = "/javascript.97d993ba.png";
 },{}],"src/img/skills/react.png":[function(require,module,exports) {
@@ -283,6 +281,10 @@ module.exports = "/typescript.ff62d379.png";
 module.exports = "/nextJS.44bc22a6.png";
 },{}],"src/img/skills/mysql.png":[function(require,module,exports) {
 module.exports = "/mysql.4ce3a352.png";
+},{}],"src/img/skills/nest.png":[function(require,module,exports) {
+module.exports = "/nest.32a2786d.png";
+},{}],"src/img/skills/styled-components.png":[function(require,module,exports) {
+module.exports = "/styled-components.6795c2d2.png";
 },{}],"src/js/skills.js":[function(require,module,exports) {
 "use strict";
 
@@ -296,8 +298,6 @@ var _html = _interopRequireDefault(require("../img/skills/html5.png"));
 var _css = _interopRequireDefault(require("../img/skills/css3.png"));
 
 var _sass = _interopRequireDefault(require("../img/skills/sass.png"));
-
-var _bootstrap = _interopRequireDefault(require("../img/skills/bootstrap.png"));
 
 var _javascript = _interopRequireDefault(require("../img/skills/javascript.png"));
 
@@ -329,6 +329,10 @@ var _nextJS = _interopRequireDefault(require("../img/skills/nextJS.png"));
 
 var _mysql = _interopRequireDefault(require("../img/skills/mysql.png"));
 
+var _nest = _interopRequireDefault(require("../img/skills/nest.png"));
+
+var _styledComponents = _interopRequireDefault(require("../img/skills/styled-components.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var dataSkills = [{
@@ -349,28 +353,28 @@ var dataSkills = [{
 }, {
   id: 4,
   type: "front",
+  name: "Styled-Components",
+  img: _styledComponents.default
+}, {
+  id: 5,
+  type: "front",
   name: "JavaScript",
   img: _javascript.default
 }, {
-  id: 5,
+  id: 6,
   type: "front",
   name: "TypeScript",
   img: _typescript.default
 }, {
-  id: 6,
+  id: 7,
   type: "front",
   name: "Next.js",
   img: _nextJS.default
 }, {
-  id: 7,
+  id: 8,
   type: "front",
   name: "React",
   img: _react.default
-}, {
-  id: 8,
-  type: "front",
-  name: "Redux",
-  img: _redux.default
 }, {
   id: 9,
   type: "back",
@@ -388,14 +392,14 @@ var dataSkills = [{
   img: _mysql.default
 }, {
   id: 12,
-  type: "other",
-  name: "RWD",
-  img: _rwd.default
+  type: "back",
+  name: "Nest.js",
+  img: _nest.default
 }, {
   id: 13,
   type: "other",
-  name: "NPM",
-  img: _npm.default
+  name: "Redux",
+  img: _redux.default
 }, {
   id: 14,
   type: "other",
@@ -409,18 +413,28 @@ var dataSkills = [{
 }, {
   id: 16,
   type: "other",
+  name: "NPM",
+  img: _npm.default
+}, {
+  id: 17,
+  type: "other",
   name: "Visual Studio Code",
   img: _visualStudioCode.default
 }, {
-  id: 17,
+  id: 18,
   type: "other",
   name: "Parcel",
   img: _parcel.default
 }, {
-  id: 18,
+  id: 19,
   type: "other",
   name: "SEO",
   img: _seo.default
+}, {
+  id: 20,
+  type: "other",
+  name: "RWD",
+  img: _rwd.default
 }];
 
 var skills = function skills() {
@@ -460,7 +474,7 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/bootstrap.png":"src/img/skills/bootstrap.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextJS.png":"src/img/skills/nextJS.png","../img/skills/mysql.png":"src/img/skills/mysql.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextJS.png":"src/img/skills/nextJS.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
 module.exports = "/world-currencies.26c4b0e0.jpg";
 },{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
@@ -1152,7 +1166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54859" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51997" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

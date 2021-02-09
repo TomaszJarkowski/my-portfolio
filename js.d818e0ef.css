@@ -1807,6 +1807,14 @@ html {
   content: "";
 }
 
+.fa-linkedin:before {
+  content: "";
+}
+
+.fa-linkedin-alt:before {
+  content: "";
+}
+
 .fa-html5:before {
   content: "";
 }
