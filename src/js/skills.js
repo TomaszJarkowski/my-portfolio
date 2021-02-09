@@ -1,7 +1,6 @@
 import htmlIMG from "../img/skills/html5.png";
 import cssIMG from "../img/skills/css3.png";
 import sassIMG from "../img/skills/sass.png";
-import bootstrapIMG from "../img/skills/bootstrap.png";
 import JSIMG from "../img/skills/javascript.png";
 import ReactIMG from "../img/skills/react.png";
 import ReduxIMG from "../img/skills/redux.png";
@@ -17,6 +16,8 @@ import seoIMG from "../img/skills/seo.png";
 import typescriptIMG from "../img/skills/typescript.png";
 import nextJSIMG from "../img/skills/nextJS.png";
 import mySQLIMG from "../img/skills/mysql.png";
+import nestIMG from "../img/skills/nest.png";
+import styledComponentsIMG from "../img/skills/styled-components.png";
 
 const dataSkills = [
   {
@@ -40,32 +41,32 @@ const dataSkills = [
   {
     id: 4,
     type: "front",
+    name: "Styled-Components",
+    img: styledComponentsIMG,
+  },
+  {
+    id: 5,
+    type: "front",
     name: "JavaScript",
     img: JSIMG,
   },
   {
-    id: 5,
+    id: 6,
     type: "front",
     name: "TypeScript",
     img: typescriptIMG,
   },
   {
-    id: 6,
+    id: 7,
     type: "front",
     name: "Next.js",
     img: nextJSIMG,
   },
   {
-    id: 7,
+    id: 8,
     type: "front",
     name: "React",
     img: ReactIMG,
-  },
-  {
-    id: 8,
-    type: "front",
-    name: "Redux",
-    img: ReduxIMG,
   },
   {
     id: 9,
@@ -87,15 +88,15 @@ const dataSkills = [
   },
   {
     id: 12,
-    type: "other",
-    name: "RWD",
-    img: RWDIMG,
+    type: "back",
+    name: "Nest.js",
+    img: nestIMG,
   },
   {
     id: 13,
     type: "other",
-    name: "NPM",
-    img: npmIMG,
+    name: "Redux",
+    img: ReduxIMG,
   },
   {
     id: 14,
@@ -112,20 +113,32 @@ const dataSkills = [
   {
     id: 16,
     type: "other",
+    name: "NPM",
+    img: npmIMG,
+  },
+  {
+    id: 17,
+    type: "other",
     name: "Visual Studio Code",
     img: vsIMG,
   },
   {
-    id: 17,
+    id: 18,
     type: "other",
     name: "Parcel",
     img: parcelIMG,
   },
   {
-    id: 18,
+    id: 19,
     type: "other",
     name: "SEO",
     img: seoIMG,
+  },
+  {
+    id: 20,
+    type: "other",
+    name: "RWD",
+    img: RWDIMG,
   },
 ];
 
