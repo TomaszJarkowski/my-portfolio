@@ -1859,6 +1859,10 @@ html {
   content: "";
 }
 
+.fa-unlock:before {
+  content: "";
+}
+
 .fa-phone:before {
   content: "";
 }
@@ -1888,6 +1892,10 @@ html {
 }
 
 .fa-user-lock:before {
+  content: "";
+}
+
+.fa-user-unlock:before {
   content: "";
 }
 
