@@ -1803,6 +1803,10 @@ html {
   content: "";
 }
 
+.fa-desktop:before {
+  content: "";
+}
+
 .fa-github-alt:before {
   content: "";
 }
