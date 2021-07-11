@@ -10,7 +10,7 @@ const portfolioDB = [
     id: 1,
     name: "Shop-Guru",
     technologys: "MERN (MongoDB, Express, React, Node.js)",
-    gh: "https://github.com/TomaszJarkowski/shop-guru",
+    gh: "https://github.com/TomaszJarkowski/guru",
     link: "https://guru-shop.herokuapp.com/shop",
     img: shopGuruIMG,
   },
@@ -32,27 +32,11 @@ const portfolioDB = [
   },
   {
     id: 4,
-    name: "World-Currencies-App",
-    technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
-    gh: "https://github.com/TomaszJarkowski/world-currencies-app",
-    link: "https://tomaszjarkowski.github.io/world-currencies-app",
-    img: worldCurriencesIMG,
-  },
-  {
-    id: 5,
     name: "Search-Book-App",
     technologys: "React, Context, Jest, SCSS, RWD",
     gh: "https://github.com/TomaszJarkowski/search-books-app",
     link: "https://tomaszjarkowski.github.io/search-books-app/",
     img: bookSearchIMG,
-  },
-  {
-    id: 6,
-    name: "Currencies-Converter",
-    technologys: "HTML, TypeScript, SCSS, RWD, Parcel",
-    gh: "https://github.com/TomaszJarkowski/World-Curriencies-TS",
-    link: "https://tomaszjarkowski.github.io/World-Curriencies-TS/",
-    img: currenciesConverterIMG,
   },
 ];
 

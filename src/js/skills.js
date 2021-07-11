@@ -17,6 +17,7 @@ import typescriptIMG from "../img/skills/typescript.png";
 import nextJSIMG from "../img/skills/nextJS.png";
 import mySQLIMG from "../img/skills/mysql.png";
 import nestIMG from "../img/skills/nest.png";
+import dockerIMG from "../img/skills/docker.png";
 import styledComponentsIMG from "../img/skills/styled-components.png";
 
 const dataSkills = [
@@ -139,6 +140,12 @@ const dataSkills = [
     type: "other",
     name: "RWD",
     img: RWDIMG,
+  },
+  {
+    id: 21,
+    type: "back",
+    name: "Docker",
+    img: dockerIMG,
   },
 ];
 
