@@ -283,6 +283,8 @@ module.exports = "/nextJS.44bc22a6.png";
 module.exports = "/mysql.4ce3a352.png";
 },{}],"src/img/skills/nest.png":[function(require,module,exports) {
 module.exports = "/nest.32a2786d.png";
+},{}],"src/img/skills/docker.png":[function(require,module,exports) {
+module.exports = "/docker.f03fc590.png";
 },{}],"src/img/skills/styled-components.png":[function(require,module,exports) {
 module.exports = "/styled-components.6795c2d2.png";
 },{}],"src/js/skills.js":[function(require,module,exports) {
@@ -330,6 +332,8 @@ var _nextJS = _interopRequireDefault(require("../img/skills/nextJS.png"));
 var _mysql = _interopRequireDefault(require("../img/skills/mysql.png"));
 
 var _nest = _interopRequireDefault(require("../img/skills/nest.png"));
+
+var _docker = _interopRequireDefault(require("../img/skills/docker.png"));
 
 var _styledComponents = _interopRequireDefault(require("../img/skills/styled-components.png"));
 
@@ -435,6 +439,11 @@ var dataSkills = [{
   type: "other",
   name: "RWD",
   img: _rwd.default
+}, {
+  id: 21,
+  type: "back",
+  name: "Docker",
+  img: _docker.default
 }];
 
 var skills = function skills() {
@@ -474,7 +483,7 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextJS.png":"src/img/skills/nextJS.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextJS.png":"src/img/skills/nextJS.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/docker.png":"src/img/skills/docker.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png"}],"src/img/portfolio/world-currencies.jpg":[function(require,module,exports) {
 module.exports = "/world-currencies.26c4b0e0.jpg";
 },{}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
@@ -512,7 +521,7 @@ var portfolioDB = [{
   id: 1,
   name: "Shop-Guru",
   technologys: "MERN (MongoDB, Express, React, Node.js)",
-  gh: "https://github.com/TomaszJarkowski/shop-guru",
+  gh: "https://github.com/TomaszJarkowski/guru",
   link: "https://guru-shop.herokuapp.com/shop",
   img: _shopGuru.default
 }, {
@@ -531,25 +540,11 @@ var portfolioDB = [{
   img: _bookingApp.default
 }, {
   id: 4,
-  name: "World-Currencies-App",
-  technologys: "Bootstrap, HTML, JavaScript, RWD, Parcel",
-  gh: "https://github.com/TomaszJarkowski/world-currencies-app",
-  link: "https://tomaszjarkowski.github.io/world-currencies-app",
-  img: _worldCurrencies.default
-}, {
-  id: 5,
   name: "Search-Book-App",
   technologys: "React, Context, Jest, SCSS, RWD",
   gh: "https://github.com/TomaszJarkowski/search-books-app",
   link: "https://tomaszjarkowski.github.io/search-books-app/",
   img: _bookSearch.default
-}, {
-  id: 6,
-  name: "Currencies-Converter",
-  technologys: "HTML, TypeScript, SCSS, RWD, Parcel",
-  gh: "https://github.com/TomaszJarkowski/World-Curriencies-TS",
-  link: "https://tomaszjarkowski.github.io/World-Curriencies-TS/",
-  img: _worldCurrenciesTS.default
 }];
 
 var portfolio = function portfolio() {
@@ -1166,7 +1161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53885" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52050" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
