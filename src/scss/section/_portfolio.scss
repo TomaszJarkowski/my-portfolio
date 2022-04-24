@@ -141,6 +141,15 @@
             justify-content: center;
             align-items: center;
 
+            .portfolio__buttonDisabled {
+                opacity: 0.2;
+                transition: none;
+
+                a {
+                    cursor: default;
+                }
+            }
+
             button {
                 background: none;
                 background-color: rgba(255, 255, 255, 0.8);

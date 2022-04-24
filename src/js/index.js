@@ -2,11 +2,12 @@ import "../scss/style.scss";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 
 import { menu } from "./menu";
 import { skills } from "./skills";
 import { portfolio } from "./portfolio";
-import { contact } from "./contact";
 import { animationScroll } from "./animationScroll";
 import { spinner } from "./spinner";
 
@@ -14,8 +15,27 @@ spinner();
 menu();
 skills();
 portfolio();
-contact();
 animationScroll();
+
+tippy('.info__item', {
+  placement: 'right',
+  content: "Click to copy!",
+});
+
+tippy('.info__item', {
+  placement: 'right',
+  trigger: "click",
+  content: "Copied!",
+  duration: '1s',
+});
+
+const itemsToCopy = document.querySelectorAll('.info__item')
+
+itemsToCopy.forEach(el => {
+  el.addEventListener('click', () => {
+    navigator.clipboard.writeText(el.innerText);
+  })
+})
 
 AOS.init({
   // Global settings:

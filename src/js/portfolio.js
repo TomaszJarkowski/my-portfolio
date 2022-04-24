@@ -1,9 +1,7 @@
-import worldCurriencesIMG from "../img/portfolio/world-currencies.jpg";
 import tictactoeIMG from "../img/portfolio/tic-tac-toe.jpg";
-import bookingIMG from "../img/portfolio/booking-app.jpg";
 import shopGuruIMG from "../img/portfolio/shop-guru.jpg";
-import bookSearchIMG from "../img/portfolio/book-search.jpg";
-import currenciesConverterIMG from "../img/portfolio/world-currenciesTS.jpg";
+import nestIMG from "../img/portfolio/nest.jpeg";
+import fishingBlogIMG from "../img/portfolio/fishing-blog.jpg";
 
 const portfolioDB = [
   {
@@ -11,32 +9,32 @@ const portfolioDB = [
     name: "Shop-Guru",
     technologys: "MERN (MongoDB, Express, React, Node.js)",
     gh: "https://github.com/TomaszJarkowski/guru",
-    link: "https://guru-shop.herokuapp.com/shop",
+    link: "https://guru-shop.herokuapp.com",
     img: shopGuruIMG,
   },
   {
     id: 2,
+    name: "Fishing-Blog",
+    technologys: "Next, SCSS, Markdown",
+    gh: "https://github.com/TomaszJarkowski/blog_app",
+    link: "https://blog-app-tomaszjarkowski.vercel.app/",
+    img: fishingBlogIMG,
+  },
+  {
+    id: 3,
+    name: "Products-App",
+    technologys: "Nest, Passport, MySQL, Typeorm, Interceptors, Guards",
+    gh: "https://github.com/TomaszJarkowski/nest-products",
+    link: null,
+    img: nestIMG,
+  },
+  {
+    id: 4,
     name: "Tic-Tac-Toe",
     technologys: "SCSS, HTML, JavaScript, Local Storage, RWD, Parcel",
     gh: "https://github.com/TomaszJarkowski/Tic_Tac_Toe_Game",
     link: "https://tomaszjarkowski.github.io/Tic_Tac_Toe_Game",
     img: tictactoeIMG,
-  },
-  {
-    id: 3,
-    name: "Booking-App",
-    technologys: "MERN (MongoDB, Express, React, Node.js)",
-    gh: "https://github.com/TomaszJarkowski/Booking-App-Front",
-    link: "https://booking-app-front.herokuapp.com/",
-    img: bookingIMG,
-  },
-  {
-    id: 4,
-    name: "Search-Book-App",
-    technologys: "React, Context, Jest, SCSS, RWD",
-    gh: "https://github.com/TomaszJarkowski/search-books-app",
-    link: "https://tomaszjarkowski.github.io/search-books-app/",
-    img: bookSearchIMG,
   },
 ];
 
@@ -75,8 +73,14 @@ export const portfolio = () => {
     buttonGH.innerHTML = `<a href=${el.gh} target='_blank' rel="noopener" rel="noreferrer">Github <i class='fab fa-github'></i></a>`;
 
     const buttonLive = document.createElement("button");
-    buttonLive.classList.add("portfolio__buttonLive");
-    buttonLive.innerHTML = `<a href=${el.link} target='_blank' rel="noopener" rel="noreferrer">Demo <i class='fas fa-desktop'></i></a>`;
+
+    if(!el.link) {
+      buttonLive.classList.add("portfolio__buttonDisabled");
+      buttonLive.innerHTML = `<a>Demo <i class='fas fa-desktop'></i></a>`;
+    } else {
+      buttonLive.classList.add("portfolio__buttonLive");
+      buttonLive.innerHTML = `<a href=${el.link} target='_blank' rel="noopener" rel="noreferrer">Demo <i class='fas fa-desktop'></i></a>`;
+    }
 
     buttons.appendChild(buttonGH);
     buttons.appendChild(buttonLive);

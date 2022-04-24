@@ -14,11 +14,14 @@ import vsIMG from "../img/skills/visual-studio-code.png";
 import parcelIMG from "../img/skills/parcel.png";
 import seoIMG from "../img/skills/seo.png";
 import typescriptIMG from "../img/skills/typescript.png";
-import nextJSIMG from "../img/skills/nextJS.png";
+import nextJSIMG from "../img/skills/nextjs.png";
 import mySQLIMG from "../img/skills/mysql.png";
 import nestIMG from "../img/skills/nest.png";
 import dockerIMG from "../img/skills/docker.png";
 import styledComponentsIMG from "../img/skills/styled-components.png";
+import expressIMG from "../img/skills/express.png";
+import elasticIMG from "../img/skills/elastic.png";
+import postmanIMG from "../img/skills/postman.png";
 
 const dataSkills = [
   {
@@ -146,6 +149,24 @@ const dataSkills = [
     type: "back",
     name: "Docker",
     img: dockerIMG,
+  },
+  {
+    id: 22,
+    type: "back",
+    name: "Express.js",
+    img: expressIMG,
+  },
+  {
+    id: 23,
+    type: "back",
+    name: "Postman",
+    img: postmanIMG,
+  },
+  {
+    id: 24,
+    type: "back",
+    name: "Elasitcsearch",
+    img: elasticIMG,
   },
 ];
 

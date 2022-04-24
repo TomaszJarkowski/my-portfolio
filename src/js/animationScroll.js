@@ -5,10 +5,12 @@ export const animationScroll = () => {
   const aboutMe = document.querySelector(".aboutMe");
   const skills = document.querySelector(".skills");
   const portfolio = document.querySelector(".portfolio");
+  const experience = document.querySelector(".experience");
   const contact = document.querySelector(".contact");
   const header = document.querySelector(".header");
 
   const linkAboutMe = document.querySelector(".link__aboutMe");
+  const linkExperience = document.querySelector(".link__experience");
   const linkSkills = document.querySelector(".link__skills");
   const linkPortfolio = document.querySelector(".link__portfolio");
   const linkContact = document.querySelector(".link__contact");
@@ -47,6 +49,9 @@ export const animationScroll = () => {
   });
   linkPortfolio.addEventListener("click", () => {
     jump(portfolio, option);
+  });
+  linkExperience.addEventListener("click", () => {
+    jump(experience, option);
   });
   linkContact.addEventListener("click", () => {
     jump(contact, option);
