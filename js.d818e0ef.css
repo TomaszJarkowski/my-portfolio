@@ -136,7 +136,7 @@ table {
 
 .header {
   position: relative;
-  background-image: url("/background-header.658df265.webp");
+  background-image: url("/background-header.2e4c15d7.webp");
   background-position: top;
   background-size: cover;
   background-color: white;
@@ -358,7 +358,7 @@ table {
   }
 }
 .aboutMe {
-  background-image: url("/bg.7597a4f5.jpg");
+  background-image: url("/bg.41ec92eb.jpg");
   background-size: cover;
   background-position: top;
   max-width: 2200px;
@@ -386,6 +386,7 @@ table {
   border-radius: 40px;
   margin: 0 auto;
   max-height: 450px;
+  object-fit: cover;
   box-shadow: 10px -5px 5px 0px #DF524A;
 }
 @media (min-width: 1000px) {
@@ -711,7 +712,7 @@ table {
 }
 
 .contact {
-  background-image: url("/bg-contact4.ee2b2771.jpg");
+  background-image: url("/bg-contact4.05302b5e.jpg");
   background-size: cover;
   box-shadow: 0 0 7px 1px black;
   max-width: 2200px;
@@ -795,6 +796,25 @@ table {
 
 .experience {
   line-height: 22px;
+}
+.experience .box {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+@media (min-width: 720px) {
+  .experience .box {
+    flex-direction: row;
+  }
+}
+.experience .box img {
+  margin: 20px;
+  width: 300px;
+}
+@media (min-width: 720px) {
+  .experience .box img {
+    margin-left: 20px;
+  }
 }
 .experience__info {
   margin: 20px;
