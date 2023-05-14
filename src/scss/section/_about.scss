@@ -1,5 +1,5 @@
 .aboutMe {
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg/bg.jpg");
     background-size: cover;
     background-position: top;
     max-width: $max-widthBGImg;
@@ -29,6 +29,7 @@
         border-radius: 40px;
         margin: 0 auto;
         max-height: 450px;
+        object-fit: cover;
         box-shadow: 10px -5px 5px 0px $color-lightRed;
 
         @media(min-width: 1000px) {

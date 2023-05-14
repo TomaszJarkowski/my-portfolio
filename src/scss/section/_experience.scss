@@ -1,6 +1,25 @@
 .experience {
     line-height: 22px;
 
+    .box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @media(min-width: 720px) {
+            flex-direction: row;
+        }
+
+        img {
+            margin: 20px;
+            width: 300px;
+
+            @media(min-width: 720px) {
+                margin-left: 20px;
+            }
+        }
+    }
+
     &__info {
         margin: 20px;
         background-color: #ffffff;
