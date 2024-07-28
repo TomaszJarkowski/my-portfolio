@@ -22,6 +22,8 @@ import styledComponentsIMG from "../img/skills/styled-components.png";
 import expressIMG from "../img/skills/express.png";
 import elasticIMG from "../img/skills/elastic.png";
 import postmanIMG from "../img/skills/postman.png";
+import zapierIMG from "../img/skills/zapier.png";
+import jiraIMG from "../img/skills/jira.png";
 
 const dataSkills = [
   {
@@ -117,8 +119,8 @@ const dataSkills = [
   {
     id: 16,
     type: "other",
-    name: "NPM",
-    img: npmIMG,
+    name: "Zapier",
+    img: zapierIMG,
   },
   {
     id: 17,
@@ -129,8 +131,8 @@ const dataSkills = [
   {
     id: 18,
     type: "other",
-    name: "Parcel",
-    img: parcelIMG,
+    name: "Jira",
+    img: jiraIMG,
   },
   {
     id: 19,
