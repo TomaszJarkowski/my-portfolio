@@ -5858,6 +5858,10 @@ module.exports = "/express.34a25b8d.png";
 module.exports = "/elastic.f1ee5bc7.png";
 },{}],"src/img/skills/postman.png":[function(require,module,exports) {
 module.exports = "/postman.e65580b3.png";
+},{}],"src/img/skills/zapier.png":[function(require,module,exports) {
+module.exports = "/zapier.621c7486.png";
+},{}],"src/img/skills/jira.png":[function(require,module,exports) {
+module.exports = "/jira.584b2fd8.png";
 },{}],"src/js/skills.js":[function(require,module,exports) {
 "use strict";
 
@@ -5913,6 +5917,10 @@ var _express = _interopRequireDefault(require("../img/skills/express.png"));
 var _elastic = _interopRequireDefault(require("../img/skills/elastic.png"));
 
 var _postman = _interopRequireDefault(require("../img/skills/postman.png"));
+
+var _zapier = _interopRequireDefault(require("../img/skills/zapier.png"));
+
+var _jira = _interopRequireDefault(require("../img/skills/jira.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5994,8 +6002,8 @@ var dataSkills = [{
 }, {
   id: 16,
   type: "other",
-  name: "NPM",
-  img: _npm.default
+  name: "Zapier",
+  img: _zapier.default
 }, {
   id: 17,
   type: "other",
@@ -6004,8 +6012,8 @@ var dataSkills = [{
 }, {
   id: 18,
   type: "other",
-  name: "Parcel",
-  img: _parcel.default
+  name: "Jira",
+  img: _jira.default
 }, {
   id: 19,
   type: "other",
@@ -6075,7 +6083,7 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextjs.png":"src/img/skills/nextjs.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/docker.png":"src/img/skills/docker.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png","../img/skills/express.png":"src/img/skills/express.png","../img/skills/elastic.png":"src/img/skills/elastic.png","../img/skills/postman.png":"src/img/skills/postman.png"}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextjs.png":"src/img/skills/nextjs.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/docker.png":"src/img/skills/docker.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png","../img/skills/express.png":"src/img/skills/express.png","../img/skills/elastic.png":"src/img/skills/elastic.png","../img/skills/postman.png":"src/img/skills/postman.png","../img/skills/zapier.png":"src/img/skills/zapier.png","../img/skills/jira.png":"src/img/skills/jira.png"}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
 },{}],"src/img/portfolio/shop-guru.jpg":[function(require,module,exports) {
 module.exports = "/shop-guru.2de1cfcd.jpg";
@@ -6547,7 +6555,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49472" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62323" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

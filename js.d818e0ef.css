@@ -807,6 +807,9 @@ table {
     flex-direction: row;
   }
 }
+.experience .box .small_img {
+  width: 160px;
+}
 .experience .box img {
   margin: 20px;
   width: 300px;
