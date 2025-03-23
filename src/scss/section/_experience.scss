@@ -1,6 +1,17 @@
 .experience {
     line-height: 22px;
 
+    a {
+        color: $color-lightRed;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-lightGreen;
+        }
+    }
+
     .box {
         display: flex;
         flex-direction: column-reverse;

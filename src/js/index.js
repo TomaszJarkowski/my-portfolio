@@ -14,7 +14,7 @@ import { spinner } from "./spinner";
 spinner();
 menu();
 skills();
-portfolio();
+// portfolio();
 animationScroll();
 
 tippy('.info__item', {

@@ -10,12 +10,13 @@ import mongoDBIMG from "../img/skills/mongodb.png";
 import npmIMG from "../img/skills/npm.png";
 import jestIMG from "../img/skills/jest.png";
 import gitIMG from "../img/skills/git.png";
-import vsIMG from "../img/skills/visual-studio-code.png";
+import vercelIMG from "../img/skills/vercel.png";
 import parcelIMG from "../img/skills/parcel.png";
 import seoIMG from "../img/skills/seo.png";
 import typescriptIMG from "../img/skills/typescript.png";
 import nextJSIMG from "../img/skills/nextjs.png";
-import mySQLIMG from "../img/skills/mysql.png";
+import digitalOceanIMG from "../img/skills/digitalOcean.png";
+import microservicesIMG from "../img/skills/microservices.png";
 import nestIMG from "../img/skills/nest.png";
 import dockerIMG from "../img/skills/docker.png";
 import styledComponentsIMG from "../img/skills/styled-components.png";
@@ -26,6 +27,48 @@ import zapierIMG from "../img/skills/zapier.png";
 import jiraIMG from "../img/skills/jira.png";
 
 const dataSkills = [
+  {
+    id: 5,
+    type: "front",
+    name: "JavaScript",
+    img: JSIMG,
+  },
+  {
+    id: 25,
+    type: "other",
+    name: "Mikroserwisy",
+    img: microservicesIMG,
+  },
+  {
+    id: 30,
+    type: "other",
+    name: "DigitalOcean",
+    img: digitalOceanIMG,
+  },
+  {
+    id: 31,
+    type: "other",
+    name: "Vercel",
+    img: vercelIMG,
+  },
+  {
+    id: 6,
+    type: "front",
+    name: "TypeScript",
+    img: typescriptIMG,
+  },
+  {
+    id: 7,
+    type: "front",
+    name: "Next.js",
+    img: nextJSIMG,
+  },
+  {
+    id: 8,
+    type: "front",
+    name: "React",
+    img: ReactIMG,
+  },
   {
     id: 1,
     type: "front",
@@ -51,64 +94,16 @@ const dataSkills = [
     img: styledComponentsIMG,
   },
   {
-    id: 5,
-    type: "front",
-    name: "JavaScript",
-    img: JSIMG,
-  },
-  {
-    id: 6,
-    type: "front",
-    name: "TypeScript",
-    img: typescriptIMG,
-  },
-  {
-    id: 7,
-    type: "front",
-    name: "Next.js",
-    img: nextJSIMG,
-  },
-  {
-    id: 8,
-    type: "front",
-    name: "React",
-    img: ReactIMG,
-  },
-  {
     id: 9,
     type: "back",
     name: "Node.js",
     img: nodeJSIMG,
   },
   {
-    id: 10,
-    type: "back",
-    name: "MongoDB",
-    img: mongoDBIMG,
-  },
-  {
-    id: 11,
-    type: "back",
-    name: "MySQL",
-    img: mySQLIMG,
-  },
-  {
     id: 12,
     type: "back",
     name: "Nest.js",
     img: nestIMG,
-  },
-  {
-    id: 13,
-    type: "other",
-    name: "Redux",
-    img: ReduxIMG,
-  },
-  {
-    id: 14,
-    type: "other",
-    name: "Jest",
-    img: jestIMG,
   },
   {
     id: 15,
@@ -121,12 +116,6 @@ const dataSkills = [
     type: "other",
     name: "Zapier",
     img: zapierIMG,
-  },
-  {
-    id: 17,
-    type: "other",
-    name: "Visual Studio Code",
-    img: vsIMG,
   },
   {
     id: 18,
@@ -157,12 +146,6 @@ const dataSkills = [
     type: "back",
     name: "Express.js",
     img: expressIMG,
-  },
-  {
-    id: 23,
-    type: "back",
-    name: "Postman",
-    img: postmanIMG,
   },
   {
     id: 24,
