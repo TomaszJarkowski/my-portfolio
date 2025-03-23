@@ -797,6 +797,15 @@ table {
 .experience {
   line-height: 22px;
 }
+.experience a {
+  color: #DF524A;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.experience a:hover {
+  color: #76b852;
+}
 .experience .box {
   display: flex;
   flex-direction: column-reverse;

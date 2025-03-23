@@ -5834,8 +5834,8 @@ module.exports = "/npm.1b2b86c1.png";
 module.exports = "/jest.9311218e.png";
 },{}],"src/img/skills/git.png":[function(require,module,exports) {
 module.exports = "/git.4faa239e.png";
-},{}],"src/img/skills/visual-studio-code.png":[function(require,module,exports) {
-module.exports = "/visual-studio-code.fc88be70.png";
+},{}],"src/img/skills/vercel.png":[function(require,module,exports) {
+module.exports = "/vercel.c56cb878.png";
 },{}],"src/img/skills/parcel.png":[function(require,module,exports) {
 module.exports = "/parcel.d226e4df.png";
 },{}],"src/img/skills/seo.png":[function(require,module,exports) {
@@ -5844,8 +5844,10 @@ module.exports = "/seo.434f49c6.png";
 module.exports = "/typescript.ff62d379.png";
 },{}],"src/img/skills/nextjs.png":[function(require,module,exports) {
 module.exports = "/nextjs.1ea9b836.png";
-},{}],"src/img/skills/mysql.png":[function(require,module,exports) {
-module.exports = "/mysql.4ce3a352.png";
+},{}],"src/img/skills/digitalOcean.png":[function(require,module,exports) {
+module.exports = "/digitalOcean.bc2eae26.png";
+},{}],"src/img/skills/microservices.png":[function(require,module,exports) {
+module.exports = "/microservices.5f3f0164.png";
 },{}],"src/img/skills/nest.png":[function(require,module,exports) {
 module.exports = "/nest.32a2786d.png";
 },{}],"src/img/skills/docker.png":[function(require,module,exports) {
@@ -5894,7 +5896,7 @@ var _jest = _interopRequireDefault(require("../img/skills/jest.png"));
 
 var _git = _interopRequireDefault(require("../img/skills/git.png"));
 
-var _visualStudioCode = _interopRequireDefault(require("../img/skills/visual-studio-code.png"));
+var _vercel = _interopRequireDefault(require("../img/skills/vercel.png"));
 
 var _parcel = _interopRequireDefault(require("../img/skills/parcel.png"));
 
@@ -5904,7 +5906,9 @@ var _typescript = _interopRequireDefault(require("../img/skills/typescript.png")
 
 var _nextjs = _interopRequireDefault(require("../img/skills/nextjs.png"));
 
-var _mysql = _interopRequireDefault(require("../img/skills/mysql.png"));
+var _digitalOcean = _interopRequireDefault(require("../img/skills/digitalOcean.png"));
+
+var _microservices = _interopRequireDefault(require("../img/skills/microservices.png"));
 
 var _nest = _interopRequireDefault(require("../img/skills/nest.png"));
 
@@ -5925,6 +5929,41 @@ var _jira = _interopRequireDefault(require("../img/skills/jira.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var dataSkills = [{
+  id: 5,
+  type: "front",
+  name: "JavaScript",
+  img: _javascript.default
+}, {
+  id: 25,
+  type: "other",
+  name: "Mikroserwisy",
+  img: _microservices.default
+}, {
+  id: 30,
+  type: "other",
+  name: "DigitalOcean",
+  img: _digitalOcean.default
+}, {
+  id: 31,
+  type: "other",
+  name: "Vercel",
+  img: _vercel.default
+}, {
+  id: 6,
+  type: "front",
+  name: "TypeScript",
+  img: _typescript.default
+}, {
+  id: 7,
+  type: "front",
+  name: "Next.js",
+  img: _nextjs.default
+}, {
+  id: 8,
+  type: "front",
+  name: "React",
+  img: _react.default
+}, {
   id: 1,
   type: "front",
   name: "HTML",
@@ -5945,55 +5984,15 @@ var dataSkills = [{
   name: "Styled-Components",
   img: _styledComponents.default
 }, {
-  id: 5,
-  type: "front",
-  name: "JavaScript",
-  img: _javascript.default
-}, {
-  id: 6,
-  type: "front",
-  name: "TypeScript",
-  img: _typescript.default
-}, {
-  id: 7,
-  type: "front",
-  name: "Next.js",
-  img: _nextjs.default
-}, {
-  id: 8,
-  type: "front",
-  name: "React",
-  img: _react.default
-}, {
   id: 9,
   type: "back",
   name: "Node.js",
   img: _nodeJs.default
 }, {
-  id: 10,
-  type: "back",
-  name: "MongoDB",
-  img: _mongodb.default
-}, {
-  id: 11,
-  type: "back",
-  name: "MySQL",
-  img: _mysql.default
-}, {
   id: 12,
   type: "back",
   name: "Nest.js",
   img: _nest.default
-}, {
-  id: 13,
-  type: "other",
-  name: "Redux",
-  img: _redux.default
-}, {
-  id: 14,
-  type: "other",
-  name: "Jest",
-  img: _jest.default
 }, {
   id: 15,
   type: "other",
@@ -6004,11 +6003,6 @@ var dataSkills = [{
   type: "other",
   name: "Zapier",
   img: _zapier.default
-}, {
-  id: 17,
-  type: "other",
-  name: "Visual Studio Code",
-  img: _visualStudioCode.default
 }, {
   id: 18,
   type: "other",
@@ -6034,11 +6028,6 @@ var dataSkills = [{
   type: "back",
   name: "Express.js",
   img: _express.default
-}, {
-  id: 23,
-  type: "back",
-  name: "Postman",
-  img: _postman.default
 }, {
   id: 24,
   type: "back",
@@ -6083,7 +6072,7 @@ var skills = function skills() {
 };
 
 exports.skills = skills;
-},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/visual-studio-code.png":"src/img/skills/visual-studio-code.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextjs.png":"src/img/skills/nextjs.png","../img/skills/mysql.png":"src/img/skills/mysql.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/docker.png":"src/img/skills/docker.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png","../img/skills/express.png":"src/img/skills/express.png","../img/skills/elastic.png":"src/img/skills/elastic.png","../img/skills/postman.png":"src/img/skills/postman.png","../img/skills/zapier.png":"src/img/skills/zapier.png","../img/skills/jira.png":"src/img/skills/jira.png"}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
+},{"../img/skills/html5.png":"src/img/skills/html5.png","../img/skills/css3.png":"src/img/skills/css3.png","../img/skills/sass.png":"src/img/skills/sass.png","../img/skills/javascript.png":"src/img/skills/javascript.png","../img/skills/react.png":"src/img/skills/react.png","../img/skills/redux.png":"src/img/skills/redux.png","../img/skills/rwd.png":"src/img/skills/rwd.png","../img/skills/node-js.png":"src/img/skills/node-js.png","../img/skills/mongodb.png":"src/img/skills/mongodb.png","../img/skills/npm.png":"src/img/skills/npm.png","../img/skills/jest.png":"src/img/skills/jest.png","../img/skills/git.png":"src/img/skills/git.png","../img/skills/vercel.png":"src/img/skills/vercel.png","../img/skills/parcel.png":"src/img/skills/parcel.png","../img/skills/seo.png":"src/img/skills/seo.png","../img/skills/typescript.png":"src/img/skills/typescript.png","../img/skills/nextjs.png":"src/img/skills/nextjs.png","../img/skills/digitalOcean.png":"src/img/skills/digitalOcean.png","../img/skills/microservices.png":"src/img/skills/microservices.png","../img/skills/nest.png":"src/img/skills/nest.png","../img/skills/docker.png":"src/img/skills/docker.png","../img/skills/styled-components.png":"src/img/skills/styled-components.png","../img/skills/express.png":"src/img/skills/express.png","../img/skills/elastic.png":"src/img/skills/elastic.png","../img/skills/postman.png":"src/img/skills/postman.png","../img/skills/zapier.png":"src/img/skills/zapier.png","../img/skills/jira.png":"src/img/skills/jira.png"}],"src/img/portfolio/tic-tac-toe.jpg":[function(require,module,exports) {
 module.exports = "/tic-tac-toe.b18abfbc.jpg";
 },{}],"src/img/portfolio/shop-guru.jpg":[function(require,module,exports) {
 module.exports = "/shop-guru.2de1cfcd.jpg";
@@ -6383,8 +6372,8 @@ var animationScroll = function animationScroll() {
   var header = document.querySelector(".header");
   var linkAboutMe = document.querySelector(".link__aboutMe");
   var linkExperience = document.querySelector(".link__experience");
-  var linkSkills = document.querySelector(".link__skills");
-  var linkPortfolio = document.querySelector(".link__portfolio");
+  var linkSkills = document.querySelector(".link__skills"); // const linkPortfolio = document.querySelector(".link__portfolio");
+
   var linkContact = document.querySelector(".link__contact");
   var backTop = document.querySelector(".backTop button");
   var linkInText = document.querySelector(".aboutMe__content a");
@@ -6415,10 +6404,10 @@ var animationScroll = function animationScroll() {
   });
   linkSkills.addEventListener("click", function () {
     (0, _jump.default)(skills, option);
-  });
-  linkPortfolio.addEventListener("click", function () {
-    (0, _jump.default)(portfolio, option);
-  });
+  }); // linkPortfolio.addEventListener("click", () => {
+  //   jump(portfolio, option);
+  // });
+
   linkExperience.addEventListener("click", function () {
     (0, _jump.default)(experience, option);
   });
@@ -6473,8 +6462,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _spinner.spinner)();
 (0, _menu.menu)();
-(0, _skills.skills)();
-(0, _portfolio.portfolio)();
+(0, _skills.skills)(); // portfolio();
+
 (0, _animationScroll.animationScroll)();
 (0, _tippy.default)('.info__item', {
   placement: 'right',
@@ -6555,7 +6544,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62323" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55533" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
